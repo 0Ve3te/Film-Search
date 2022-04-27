@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial;
+}
+
+main {
+    padding: 25px;
+}
+
+#filmName {
+    width: 120px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("https://img.icons8.com/material-outlined/24/000000/search--v1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 25px;
+    font-weight: bold;
+    transition: width 0.4s ease-in-out;
+}
+
+#filmName:focus {
+    width: 250px;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    background-color: #ddd;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.result {
+    margin: 20px 0; 
+    width: 21%;
+    height: 100%;
+    min-height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    transition: .3s;
+}
+
+.result:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 36px 12px black;
+}
+
+.cover {
+    height: 280px;
+    width: 100%;
+    /* background-image: url("https://imdb-api.com/images/original/MV5BMTg1NTE2MjAwNV5BMl5BanBnXkFtZTcwNzA0MzI0Nw@@._V1_Ratio0.8182_AL_.jpg"); */
+    background-size: cover;
+    
+}
+
+.title {
+    width: 100%;
+    min-height: 20px;
+    /* background-color: black; */
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+div.title p {
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
